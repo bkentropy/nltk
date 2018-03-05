@@ -23,12 +23,14 @@ from nltk.chat.iesha import iesha_chat
 from nltk.chat.rude import rude_chat
 from nltk.chat.suntsu import suntsu_chat
 from nltk.chat.zen import zen_chat
+from nltk.chat.tao import tao_chat
 
 bots = [
     (eliza_chat,  'Eliza (psycho-babble)'),
     (iesha_chat,  'Iesha (teen anime junky)'),
     (rude_chat,   'Rude (abusive bot)'),
     (suntsu_chat, 'Suntsu (Chinese sayings)'),
+    (tao_chat, 'New zen copy'),
     (zen_chat,    'Zen (gems of wisdom)')]
 
 def chatbots():

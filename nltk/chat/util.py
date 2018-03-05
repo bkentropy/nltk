@@ -120,3 +120,15 @@ class Chat(object):
             if user_input:
                 while user_input[-1] in "!.": user_input = user_input[:-1]
                 print(self.respond(user_input))
+
+    def serverse(self, quit="quit"):
+        print("hey ;)")
+        user_input = ""
+        while user_input != quit:
+            user_input = quit
+            try: user_input = input(">")
+            except EOFError:
+                print(user_input)
+            if user_input:
+                while user_input[-1] in "!.": user_input = user_input[:-1]
+                print(self.respond(user_input))
